@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+@import "variables";
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  min-height: 100vh;
+  overflow: auto;
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background: linear-gradient($bgGradient1, $bgGradient2);
+}
+main {
+  margin: 145px 25px 85px;
+}
+.card-container {
+  min-width: 250px;
+  display: grid;
+  grid-template-rows: 135px 1fr;
+  gap: 8px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 5px 15px 5px rgb(0 0 0 / 35%);
+}
+.img-container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  grid: "main-image-containers" 1fr / 1fr;
+  .main-img {
+    grid-area: main-image-containers;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    grid: "images" 1fr / 1fr;
+  }
+  .main-img > picture {
+    grid-area: images;
+  }
+  .illustrations img {
+    width: 240px;
+    height: auto;
+    transform: translate(0, -85px);
+    position: relative;
+    z-index: 2;
+  }
+  .illustration-shadows img {
+    transform: translate(0, -15px);
+    position: relative;
+    z-index: 1;
+  }
+  .box {
+    display: none;
+  }
+}
+.content {
+  margin: 0px 20px 50px;
+  h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: $activeTextColor;
+  }
+}
+.accordion {
+  font-size: 12px;
+  text-align: left;
+  color: $bodyTextColor;
+  .accordion-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .accordion-heading {
+    color: $headingTextColor;
+    font-size: 13px;
+    padding: 15px 0;
+    display: flex;
+    font-weight: normal;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    &:hover {
+      color: $hoverTextColor;
+    }
+  }
+  .accordion-heading.active {
+    color: $activeTextColor;
+    font-weight: bold;
+  }
+  .accordion-heading.active img {
+    transform: rotate(180deg);
+    transition: 0.2s;
+  }
+  .accordion-body {
+    padding-right: 40px;
+    display: none;
+    margin-bottom: 15px;
+    overflow: hidden;
+  }
+  .accordion-heading.active + .accordion-body {
+    display: block;
+  }
+  .divider {
+    background-color: $dividers;
+    height: 1px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1109px) {
+  .content {
+    margin: 0px 100px 50px;
+  }
+}
+
+@media screen and (min-width: 1110px) {
+  .card-container {
+    max-width: 920px;
+    min-width: 325px;
+    margin: 125px auto 125px auto;
+    grid: 1fr / 400px 1fr;
+    gap: 70px;
+    max-height: 500px;
+    box-shadow: 10px 15px 15px 5px rgb(0 0 0 / 35%);
+  }
+  .img-container {
+    position: relative;
+    overflow: hidden;
+  }
+  .main-img {
+    align-content: center;
+    picture.illustrations img {
+      width: 460px;
+      transform: translate(-320px, 5px);
+    }
+    picture.illustration-shadows img {
+      transform: translate(-575px, -70px);
+    }
+  }
+  .img-container .box {
+    display: block;
+    position: fixed;
+    z-index: 10;
+    transform: translate(-197px, 55px);
+    grid-area: main-image-containers;
+  }
+  .content {
+    margin: 70px 90px 75px 0px;
+    h1 {
+      text-align: left;
+    }
+  }
+}
