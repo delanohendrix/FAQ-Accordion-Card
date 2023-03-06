@@ -28,12 +28,14 @@ Users should be able to:
 
 ### Screenshot
 
+| Screenshots                                               |
+| --------------------------------------------------------- | -------------------------------------------- |
 | ![Desktop Screenshot](/screenshot.png) Desktop Screenshot | ![Mobile Screenshot](/mobile-screenshot.png) |
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://delanohendrix.github.io/FAQ-Accordion-Card/)
+- Solution URL: [My Solution](https://your-solution-url.com)
+- Live Site URL: [Github Pages](https://delanohendrix.github.io/FAQ-Accordion-Card/)
 
 ## My process
 
@@ -78,7 +80,7 @@ I would like to practice using SASS more, as well as continue to learn Javascrip
 
 ### Useful resources
 
-- [Example resource 1](https://www.itzami.com/blog/how-to-build-an-accordion-with-javascript) - This blog post was crucial to my learning of how to implement the functionality of the accordion component in javascript.
+- [How to build an accordion with JavaScript](https://www.itzami.com/blog/how-to-build-an-accordion-with-javascript) - This blog post was crucial to my learning of how to implement the functionality of the accordion component in javascript.
 - [CSS Reference](https://cssreference.io/) - This site helped me by refreshing me on the usage of various css attributes and properties.
 
 ## Author
