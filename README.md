@@ -28,9 +28,9 @@ Users should be able to:
 
 ### Screenshot
 
-| Screenshots                                               |
-| --------------------------------------------------------- | -------------------------------------------- |
-| ![Desktop Screenshot](/screenshot.png) Desktop Screenshot | ![Mobile Screenshot](/mobile-screenshot.png) |
+|                                                           |                                                                |
+| :-------------------------------------------------------: | :------------------------------------------------------------: |
+| ![Desktop Screenshot](/screenshot.png) Desktop Screenshot | ![Mobile Screenshot](/mobile-screenshot.png) Mobile Screenshot |
 
 ### Links
 
